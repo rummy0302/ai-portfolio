@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Exo+2:wght@100;300;400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --c-bg:     #020408;
+  --c-card:   rgba(10, 20, 40, 0.8);
+  --c-border: rgba(0, 200, 255, 0.15);
+  --c-cyan:   #00c8ff;
+  --c-purple: #7b5cff;
+  --c-green:  #00ff88;
+  --c-text:   #c8e8ff;
+  --c-muted:  rgba(150, 200, 255, 0.5);
+  --c-dim:    rgba(150, 200, 255, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--c-bg);
+  color: var(--c-text);
+  font-family: "Exo 2", sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* CRT scanline overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 200, 255, 0.012) 2px,
+    rgba(0, 200, 255, 0.012) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0, 200, 255, 0.3); border-radius: 2px; }
+
+/* Chat message animation */
+@keyframes msg-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.msg-in { animation: msg-in 0.3s ease forwards; }
+
+/* Typing dots */
+@keyframes typing-dot {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50%       { opacity: 1;   transform: scale(1); }
+}
+
+/* Avatar scanline sweep */
+@keyframes scanline {
+  0%   { top: -2px; }
+  100% { top: 100%; }
+}
+
+/* Grid background for hero */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 200, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 255, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+}
+
+/* Glassmorphism card */
+.glass {
+  background: rgba(10, 20, 40, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 200, 255, 0.15);
+}
+
+/* Neon text glow */
+.glow-cyan  { text-shadow: 0 0 20px rgba(0, 200, 255, 0.5); }
+.glow-green { text-shadow: 0 0 20px rgba(0, 255, 136, 0.5); }
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #fff 0%, #00c8ff 50%, #7b5cff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
