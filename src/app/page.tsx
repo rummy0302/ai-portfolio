@@ -732,14 +732,6 @@ export default function Page() {
                       <div className="fd" style={{fontSize:14,color:"#f9a8d4",marginTop:2}}>Bachelor of Engineering (Computer Science and Design)</div>
                     </div>
                   </div>
-                  <div style={{display:"flex",flexDirection:"column",gap:6,marginBottom:14}}>
-                    {["Minor in Artificial Intelligence","Focus Track: Software Engineering and Financial Technology","Fluent in English and Tamil (spoken and written)"].map((pt,j) => (
-                      <div key={j} style={{display:"flex",gap:10,alignItems:"flex-start"}}>
-                        <span style={{color:"#f9a8d4",fontSize:16,lineHeight:1.4,flexShrink:0}}>›</span>
-                        <span style={{fontSize:13.5,color:"rgba(255,255,255,0.5)",lineHeight:1.6}}>{pt}</span>
-                      </div>
-                    ))}
-                  </div>
                   <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
                     {["AI Minor","FinTech","Software Engineering","SUTD"].map(t => <span key={t} className="fm" style={{fontSize:10,padding:"3px 9px",borderRadius:4,background:"rgba(127,29,29,0.15)",color:"#f9a8d4",border:"1px solid rgba(249,168,212,0.2)"}}>{t}</span>)}
                   </div>

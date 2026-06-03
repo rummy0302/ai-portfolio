@@ -53,7 +53,7 @@ When answering:
     pageTitle: "About Mita",
     bio: `I'm an aspiring AI engineer with a strong focus on Generative AI, Large Language Models, and intelligent system design. Skilled in prompt engineering, model evaluation, and full-stack AI development.
 
-I combine technical precision with creative insight to build systems that are scalable, adaptable, and impactful. Currently pursuing my Bachelor of Engineering in Computer Science and Design at SUTD, with a Minor in Artificial Intelligence.
+I combine technical precision with creative insight to build systems that are scalable, adaptable, and impactful. Pursued Bachelor of Engineering in Computer Science and Design at SUTD, with a Minor in Artificial Intelligence.
 
 Passionate about creating solutions that are both powerful and purposeful — committed to advancing modern AI through innovation, efficiency, and ethical design.`,
     cards: [
@@ -109,8 +109,7 @@ Passionate about creating solutions that are both powerful and purposeful — co
       desc: "AI-powered avatar to enhance language learning and reduce anxiety in virtual environments using LLMs and SBERT.",
       tags: [
         { label: "LLMs",     color: "cyan"   },
-        { label: "SBERT",    color: "cyan"   },
-        { label: "Capstone", color: "green"  },
+        { label: "SBERT",    color: "cyan"   }
       ],
     },
     {
@@ -119,7 +118,7 @@ Passionate about creating solutions that are both powerful and purposeful — co
       title: "SG Housing Price Prediction",
       desc: "AI-driven solution to predict resale HDB flat prices using Gradient Boosting models and Streamlit GUI.",
       tags: [
-        { label: "Gradient Boosting", color: "cyan"   },
+        { label: "Python", color: "cyan"   },
         { label: "Streamlit",         color: "purple" },
       ],
     },
@@ -130,7 +129,7 @@ Passionate about creating solutions that are both powerful and purposeful — co
       desc: "Real-time road sign detection and tracking system for autonomous vehicles using YOLOv8.",
       tags: [
         { label: "YOLOv8",  color: "cyan"   },
-        { label: "CV",      color: "purple" },
+        { label: "Computer Vision",      color: "purple" },
       ],
     },
     {
@@ -139,8 +138,8 @@ Passionate about creating solutions that are both powerful and purposeful — co
       title: "Personal Finance Manager",
       desc: "Platform to help individuals manage income, expenses, and financial goals with intuitive UI.",
       tags: [
-        { label: "Full Stack", color: "cyan"   },
-        { label: "JSON",       color: "purple" },
+        { label: "C Programming", color: "cyan"   },
+        { label: "HTML",       color: "purple" },
       ],
     },
     {
@@ -149,9 +148,8 @@ Passionate about creating solutions that are both powerful and purposeful — co
       title: "InvoiceHub",
       desc: "System to automate, manage, and analyse retail invoice data using OCR scanning and SQL database.",
       tags: [
-        { label: "OCR",        color: "cyan"   },
-        { label: "SQL",        color: "purple" },
-        { label: "JavaScript", color: "green"  },
+        { label: "Javascript",        color: "cyan"   },
+        { label: "HTML/CSS",        color: "purple" }
       ],
     },
     {
