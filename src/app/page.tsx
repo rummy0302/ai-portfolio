@@ -113,7 +113,7 @@ function SoundToggle({ enabled, onToggle }: { enabled: boolean; onToggle: () => 
 // - Simple gold studs, thin chain + heart pendant
 // - Small black bindi, no bangles, no nose stud
 // ═══════════════════════════════════════════════════════════════
-export function Avatar({ isSpeaking }: { isSpeaking: boolean }) {
+function Avatar({ isSpeaking }: { isSpeaking: boolean }) {
   const mouthRef = useRef<SVGGElement>(null);
   const ivRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
