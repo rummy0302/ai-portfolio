@@ -203,8 +203,6 @@ function Avatar({ isSpeaking }: { isSpeaking: boolean }) {
 
       {/* ── BACKGROUND HAIR MASS ─────────────────────────── */}
       <ellipse cx="200" cy="122" rx="74" ry="74" fill="url(#gHair)"/>
-      <path d="M126 120 Q112 150 115 190 Q122 225 136 240 Q122 215 116 180 Q112 145 124 122Z" fill="url(#gHair)"/>
-      <path d="M274 120 Q288 150 285 190 Q278 225 264 240 Q278 215 284 180 Q288 145 276 122Z" fill="url(#gHair)"/>
 
       {/* ── SHOULDER / TORSO BASE SHADOW ─────────────────── */}
       <path d="M100 310 Q140 235 200 235 Q260 235 300 310 Z" fill="url(#gShadow)" />
@@ -525,13 +523,12 @@ export default function Page() {
             {/* LEFT: Avatar */}
             <div style={{
               width:"50%",position:"relative",overflow:"hidden",
-              background:"linear-gradient(160deg,#120606 0%,#1c0a0a 55%,#0e0505 100%)",
+              background:"linear-gradient(160deg,#2a1a2e 0%,#1e1428 55%,#160e20 100%)",
               display:"flex",flexDirection:"column",
               alignItems:"center",justifyContent:"center",
             }}>
               <div style={{position:"absolute",bottom:"-5%",left:"50%",transform:"translateX(-50%)",width:460,height:460,borderRadius:"50%",background:"radial-gradient(ellipse,rgba(127,29,29,0.16) 0%,transparent 70%)",pointerEvents:"none"}}/>
               <div style={{position:"absolute",inset:0,pointerEvents:"none",backgroundImage:`linear-gradient(rgba(127,29,29,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(127,29,29,0.035) 1px,transparent 1px)`,backgroundSize:"50px 50px",WebkitMaskImage:"radial-gradient(ellipse 80% 80% at 50% 50%,black,transparent)",maskImage:"radial-gradient(ellipse 80% 80% at 50% 50%,black,transparent)"}}/>
-              <div style={{position:"absolute",left:0,right:0,height:2,zIndex:5,background:"linear-gradient(transparent,rgba(127,29,29,0.1),transparent)",animation:"scanline 7s linear infinite",pointerEvents:"none"}}/>
 
               <div style={{position:"absolute",top:20,left:24,zIndex:3}}>
                 <div className="fm" style={{fontSize:10,letterSpacing:3,textTransform:"uppercase",color:"rgba(252,165,165,0.8)",marginBottom:4}}>AI Twin · Online</div>

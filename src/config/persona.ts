@@ -149,7 +149,8 @@ Passionate about creating solutions that are both powerful and purposeful — co
       desc: "System to automate, manage, and analyse retail invoice data using OCR scanning and SQL database.",
       tags: [
         { label: "Javascript",        color: "cyan"   },
-        { label: "HTML/CSS",        color: "purple" }
+        { label: "HTML/CSS",        color: "purple" },
+
       ],
     },
     {
@@ -182,7 +183,7 @@ Her focus track is Software Engineering and Financial Technology (FinTech).`,
   {
     category: "contact",
     content: `Contact Mita through her AI portfolio website.
-She is open to AI project collaborations, internships, full-time roles, and interesting conversations about AI and engineering.
+She is open to AI project collaborations, full-time roles, and interesting conversations about AI and engineering.
 She is based in Singapore.`,
   },
   {
