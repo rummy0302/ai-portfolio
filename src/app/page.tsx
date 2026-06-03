@@ -722,21 +722,6 @@ export default function Page() {
                   </div>
                 </motion.div>
               ))}
-              <motion.div initial={{opacity:0,x:-20}} animate={{opacity:1,x:0}} transition={{delay:0.4}} style={{...card,padding:"1.5rem",position:"relative",overflow:"hidden"}}>
-                <div style={{position:"absolute",left:0,top:0,bottom:0,width:3,background:"linear-gradient(180deg,#f9a8d4,transparent)",borderRadius:"16px 0 0 16px"}}/>
-                <div style={{paddingLeft:16}}>
-                  <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:12}}>
-                    <span style={{fontSize:28}}>🎓</span>
-                    <div>
-                      <div className="fd" style={{fontSize:18,fontWeight:700,color:"#fff"}}>Singapore University of Technology and Design</div>
-                      <div className="fd" style={{fontSize:14,color:"#f9a8d4",marginTop:2}}>Bachelor of Engineering (Computer Science and Design)</div>
-                    </div>
-                  </div>
-                  <div style={{display:"flex",flexWrap:"wrap",gap:6}}>
-                    {["AI Minor","FinTech","Software Engineering","SUTD"].map(t => <span key={t} className="fm" style={{fontSize:10,padding:"3px 9px",borderRadius:4,background:"rgba(127,29,29,0.15)",color:"#f9a8d4",border:"1px solid rgba(249,168,212,0.2)"}}>{t}</span>)}
-                  </div>
-                </div>
-              </motion.div>
             </div>
           </motion.main>
         )}
