@@ -2,8 +2,6 @@ import { GoogleGenAI } from "@google/genai";
 
 const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
 
-// ── Embeddings ──────────────────────────────────────────────────
-// outputDimensionality: 768 stays under Supabase ivfflat 2000-dim limit
 export async function embedText(text: string): Promise<number[]> {
   const result = await ai.models.embedContent({
     model: "gemini-embedding-001",
@@ -15,15 +13,14 @@ export async function embedText(text: string): Promise<number[]> {
   return vector;
 }
 
-// ── Chat stream ─────────────────────────────────────────────────
 export async function* streamChat(
   systemPrompt: string,
   userMessage: string,
   context: string
 ): AsyncGenerator<string> {
   const prompt = context
-    ? `System: ${systemPrompt}\n\nContext:\n${context}\n\nUser: ${userMessage}`
-    : `System: ${systemPrompt}\n\nUser: ${userMessage}`;
+    ? `System: ${systemPrompt}\n\nContext about Mita:\n${context}\n\nUser question: ${userMessage}`
+    : `System: ${systemPrompt}\n\nUser question: ${userMessage}`;
 
   const stream = await ai.models.generateContentStream({
     model: "gemini-2.5-flash",
