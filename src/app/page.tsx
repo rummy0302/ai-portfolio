@@ -258,10 +258,6 @@ function Avatar({ isSpeaking }: { isSpeaking: boolean }) {
                Q156 99 148 128Z"
             fill="url(#gFace)" filter="drop-shadow(0px 2px 4px rgba(40,15,5,0.12))"/>
 
-      {/* Fine-tuned Cheek Contours */}
-      <path d="M149 150 Q156 155 163 146" stroke="rgba(0,0,0,0.05)" strokeWidth="2" fill="none"/>
-      <path d="M251 150 Q244 155 237 146" stroke="rgba(0,0,0,0.05)" strokeWidth="2" fill="none"/>
-
       {/* ── EYEBROWS ─────────────────────────────────────── */}
       <path d="M156 123 Q167 117 181 120" stroke="#1c0d05" strokeWidth="2.2" fill="none" strokeLinecap="round"/>
       <path d="M156 123 Q167 118 181 120" stroke="rgba(0,0,0,0.3)" strokeWidth="3.5" fill="none" strokeLinecap="round"/>
